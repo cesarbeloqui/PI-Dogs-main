@@ -1,0 +1,49 @@
+.inputContainer {
+  position: relative;
+
+}
+.inputContainer > input {
+  border-radius: 10px;
+  transition: box-shadow 500ms ease 0s;
+  padding: 10px;
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+.inputContainer > input:focus {
+  box-shadow: 1px -1px 5px 2px #cd8561;
+  -webkit-box-shadow: 1px -1px 5px 2px #cd8561;
+  -moz-box-shadow: 1px -1px 5px 2px #cd8561;
+}
+.inputContainer > input:hover {
+  box-shadow: 1px -1px 5px 2px #cd8561;
+  -webkit-box-shadow: 1px -1px 5px 2px #cd8561;
+  -moz-box-shadow: 1px -1px 5px 2px #cd8561;
+}
+.inputContainer > input.true {
+  outline: 2px solid green;
+}
+
+/* Estilos para la outline roja cuando el valor es inválido */
+.inputContainer > input.false {
+  outline: 2px solid red;
+}
+.message {
+  position: absolute;
+  width: 80%;
+  top: 100%;
+  left: 0;
+  color:black;
+  font-size: 12px;
+  font-family: "Lucida Sans";
+  background-color: #cd8561;
+  padding: 5px;
+  border: 3px solid #433f3e;
+  border-radius: 5px;
+  box-shadow: 1px -1px 5px 2px #433f3e;
+  -webkit-box-shadow: 1px -1px 5px 2px #433f3e;
+  -moz-box-shadow: 1px -1px 5px 2px #433f3e;
+  max-height: 200px; /* Establece la altura máxima */
+  overflow-y: auto;
+  z-index: 1; /* Agrega esta línea para establecer el z-index */
+}

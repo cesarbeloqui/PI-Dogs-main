@@ -1,0 +1,30 @@
+.containerFile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+  }
+  .customFileInput {
+    /* Estilo del contenedor que reemplazará el input */
+    padding: 8px 12px;
+    border-radius: 5px;
+    background: #7b4f35;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    outline: 2px solid #ccc;
+    transition: outline 500ms ease 0s;
+  }
+  .customFileInput:hover {
+    outline: 5px solid #ccc;
+  }
+  .containerImage {
+    background: #433f3e;
+    height: 100%;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.512);
+    border-radius: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+  }

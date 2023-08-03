@@ -1,0 +1,52 @@
+.container {
+  position: relative;
+}
+
+.custom-button-container.disabled {
+  pointer-events: none; /* Deshabilitar interacción con el botón cuando esté deshabilitado */
+}
+
+.custom-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.custom-button.enabled {
+  background-color: #cd8561;
+  color: black;
+}
+.custom-button.enabled:hover {
+  background-color: #ac8673;
+  color: black;
+}
+.custom-button.disabled {
+  background-color: gray;
+  cursor: not-allowed; /* Cambiar el cursor cuando el botón esté deshabilitado */
+}
+
+.message-container {
+  position: absolute;
+  top: 100%; /* Colocar el mensaje debajo del botón */
+  left: 0;
+  color: black;
+  font-size: 12px;
+  font-family: "Lucida Sans";
+  background-color: #cd8561;
+  padding: 5px;
+  border: 3px solid #433f3e;
+  border-radius: 5px;
+  box-shadow: 1px -1px 5px 2px #433f3e;
+  -webkit-box-shadow: 1px -1px 5px 2px #433f3e;
+  -moz-box-shadow: 1px -1px 5px 2px #433f3e;
+  max-height: 200px; /* Establece la altura máxima */
+  overflow-y: auto;
+  z-index: 1; /* Agrega esta línea para establecer el z-index */
+
+}
+
+.message {
+  padding: 5px;
+}
