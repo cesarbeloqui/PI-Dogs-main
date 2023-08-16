@@ -1,0 +1,117 @@
+.container {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0px;
+}
+.logo {
+  width: auto;
+  height: 100px;
+  left: 0px;
+}
+@font-face {
+  font-family: "The-Bold"; /* Nombre de la fuente */
+  src: url("../../fonts/THEBOLDFONT.ttf") format("truetype"); /* Ruta al archivo de fuente */
+}
+@font-face {
+  font-family: "Caviar-bold"; /* Nombre de la fuente */
+  src: url("../../fonts/CaviarDreams_Bold.ttf") format("truetype"); /* Ruta al archivo de fuente */
+}
+@font-face {
+  font-family: "Caviar"; /* Nombre de la fuente */
+  src: url("../../fonts/CaviarDreams.ttf") format("truetype"); /* Ruta al archivo de fuente */
+}
+@font-face {
+  font-family: "Caviar-Bold-Italic"; /* Nombre de la fuente */
+  src: url("../../fonts/CaviarDreams_BoldItalic.ttf") format("truetype"); /* Ruta al archivo de fuente */
+}
+@font-face {
+  font-family: "Caviar-Italic"; /* Nombre de la fuente */
+  src: url("../../fonts/CaviarDreams_Italic.ttf") format("truetype"); /* Ruta al archivo de fuente */
+}
+.column1 {
+  display: flex;
+  flex: 1;
+  padding: 10px;
+  margin-left: 150px;
+  flex-direction: column;
+}
+.buttonLogo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.button {
+  font-family: "Caviar-bold", sans-serif;
+  margin-left: 70px;
+  font-weight: 0;
+  font-size: 25px;
+  color: #fff;
+  background-color: #7b4f35;
+  padding: 10px 30px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+  border-radius: 5px;
+  transition: 2091ms;
+  transform: translateY(0);
+  cursor: pointer;
+}
+
+.button:hover {
+  transition: 2091ms;
+  padding: 10px 43px;
+  transform: translateY(-0px);
+  background-color: #cd8561;
+  color: #ffffff;
+  border: solid 0px #cd8561;
+}
+.title {
+  margin: 40px 0px 0px 70px;
+  font-family: "The-Bold", sans-serif;
+  font-size: 80px;
+}
+.h2 {
+  margin: 0px 0px 20px 70px;
+  font-family: "Caviar-bold", sans-serif;
+  font-size: 40px;
+}
+.p {
+  margin: 0px 0px 40px 70px;
+  font-family: "Caviar-bold", sans-serif;
+  font-size: 18px;
+}
+.column2 {
+  flex: 1;
+  padding: 0px;
+  height: 617px;
+  margin-left: 100px;
+}
+.box1 {
+  position: absolute;
+  background-color: #7b4f35;
+  width: 200px;
+  height: 617px;
+  z-index: -1; /* Envía al fondo */
+}
+
+.img {
+  background-color: #433f3e;
+  padding: 10px 10px 10px 10px; /* top right bottom left */
+  display: flex;
+  width: 50%;
+  height: auto;
+  margin-left: 10%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.img > img {
+  padding: 0px 0px 0px 0px; /* top right bottom left */
+  display: flex;
+  width: 90%;
+  height: auto;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+}

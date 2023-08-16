@@ -13,8 +13,9 @@ import FileInput from "../../utils/fileInput/fileInput";
 import CustomButton from "../../utils/CustomButton/CustomButton";
 import checkValueInArray from "../../utils/checkValueInArray";
 import Loader from "../../utils/Loader/Loader";
+import {SERVER} from "../../redux/actions-type"
 const URL_DEFAULT =
-  "https://res.cloudinary.com/dnrholah3/image/upload/v1690574692/Sin_t%C3%ADtulo_950_924_px_4_phzbov.png";
+"https://res.cloudinary.com/dnrholah3/image/upload/v1690574692/Sin_t%C3%ADtulo_950_924_px_4_phzbov.png";
 
 const dato = {
   id: "dfdkjf",
@@ -81,7 +82,7 @@ const Form = () => {
     setName(inputValue);
     try {
       const response = await axios.get(
-        `http://localhost:3001/dogs/name?name=${inputValue}`
+        `${SERVER}/dogs/name?name=${inputValue}`
       );
       let valid = true;
       let message = "Nombre valido";
@@ -278,7 +279,7 @@ const Form = () => {
   const handleSubmitForm = (e) => {
     setIsLoading(true);
     axios
-      .post("http://localhost:3001/dogs", formData)
+      .post(`${SERVER}/dogs`, formData)
       .then((response) => {
         // Petición exitosa
         setIsLoading(false);

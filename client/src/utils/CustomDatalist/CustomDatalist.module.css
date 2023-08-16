@@ -24,6 +24,7 @@
   .options {
     position: absolute;
     width: 80%;
+    max-width: 150px;
     top: 100%;
     left: 0;
     color:black;

@@ -1,5 +1,44 @@
-.mainContainer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: flex-end;
+}
+.img{
+  width: auto;
+  height: 150px;
+  margin: 25px 100px 25px 25px;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+  width: 500px;
+  height: 100px;
+  align-items: flex-end;
+}
+.button {
+  font-family: "Caviar-bold", sans-serif;
+  margin: 30px;
+  font-weight: 0;
+  font-size: 15px;
+  color: #fff;
+  background-color: #7b4f35;
+  padding: 5px 15px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+  border-radius: 5px;
+  transition: 2091ms;
+  transform: translateY(0);
+  cursor: pointer;
+}
+
+.button:hover {
+  transition: 2091ms;
+  padding: 10px 43px;
+  transform: translateY(-0px);
+  background-color: #cd8561;
+  color: #ffffff;
+  border: solid 0px #cd8561;
 }

@@ -1,0 +1,143 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #7b4f35;
+  padding: 10px;
+  border-radius: 20px;
+  text-align: center;
+  color: black;
+}
+.container h1 {
+  background-color:#e8ddcb;
+  padding: 10px;
+  border-radius: 10px;
+  width: fit-content;
+  font-family: "The-Bold", sans-serif;
+  margin: 25px;
+}
+.content {
+  background-color: #cd8561;
+  color: black;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+  border-radius: 25px;
+}
+.cardContainer {
+  display: flex;
+  margin: 30px 0px 30px 0px;
+  width: 100%;
+  max-width: 90%;
+
+  height: auto;
+}
+.cardContainer {
+  display: flex;
+  margin: 30px 0px 30px 0px;
+  width: 100%;
+
+  height: auto;
+}
+.cardContainer > * {
+  flex: 1;
+}
+.column {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.data {
+  background: #7b4f35;
+  display: flex;
+  height:fit-content;
+  width: 100%;
+  padding: 30px;
+  margin: 10px 10px 10px 0px;
+  border-radius: 0px 10px 10px 0px;
+  font-family: "Caviar-bold", sans-serif;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.512);
+  justify-content: center;
+  align-items: center;
+}
+@font-face {
+  font-family: "MiFuente"; /* Nombre que utilizarás para referenciar la fuente */
+  src: url("../../fonts/MiFuente.otf") format("opentype"); /* Ruta a tu archivo de fuente .otf */
+}
+.data p {
+  /* Estilos para los elementos p dentro del contenedor de los datos */
+  margin: 5px 0; /* Ejemplo: margen superior e inferior de 5px */
+  color: #ffffff; /* Ejemplo: color del texto */
+  font-size: 14px; /* Ejemplo: tamaño de fuente */
+  /* Agrega más estilos según tus preferencias */
+  font-family: "Lucida Sans";
+}
+
+.containerImage {
+  display: flex;
+  flex-direction: column; /* Alinear elementos verticalmente */
+  align-items: center; /* Centrar horizontalmente */
+  justify-content: center;
+  background: #433f3e;
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+  margin: 0px 0px 0px 0px;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.512);
+  animation: myAnim 1s ease 0s 1 normal forwards;
+}
+@keyframes myAnim {
+  0% {
+    transform: scale(0.5);
+    opacity: 0; /* Comienza con opacidad 0 */
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1; /* Llega a opacidad 1 al final de la animación */
+  }
+}
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #fefefe;
+}
+
+.api {
+  display: flex;
+  position: absolute;
+  background-color: #fefefe;
+  align-items: center;
+  justify-content: center;
+  top: 5px;
+  right: 0px;
+  font-size: 20px;
+  font-family: "Lucida Sans";
+  padding: 5px;
+  width:max-content;
+  height:25px;
+  border-radius: 5px 0px 0px 5px;
+  border: 5px solid #7b4f35;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #fefefe;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  text-align: right;
+}

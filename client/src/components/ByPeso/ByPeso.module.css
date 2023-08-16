@@ -1,0 +1,11 @@
+.container {
+  background-color: #e8ddcb;
+  width: fit-content;
+  padding: 0px 10px 0px 10px;
+  border-radius: 10px;
+  align-items: center;
+  margin: 10px 20px 0px 0px;
+}
+select {
+  margin: 10px;
+}

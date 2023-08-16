@@ -1,0 +1,28 @@
+.message{
+    background-color: #e8ddcb;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.button{
+    border-radius: 5px;
+    border: 0px;
+    margin: 5px 10px 5px 10px;
+    padding: 10px;
+    font-size: 15px;
+    font-family: "Caviar-bold", sans-serif;
+}
+.button2{
+    border-radius: 5px;
+    border: 0px;
+    margin: 5px 10px 5px 10px;
+    padding: 10px;
+    font-size: 15px;
+    font-family: "Caviar-bold", sans-serif;
+}

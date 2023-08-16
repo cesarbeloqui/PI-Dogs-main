@@ -1,0 +1,7 @@
+body {
+  margin: 0; /* Resetear márgenes del body */
+  padding: 0; /* Resetear relleno del body */
+  background-color: #e8ddcb; /* Cambiar el color de fondo */
+  background-image: url("./fondo.png"); /* Cambiar la imagen de fondo */
+  background-size:cover; /* Ajustar el tamaño de la imagen */
+}
